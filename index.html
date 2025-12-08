@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Les boîtes de dialogque</title>
+</head>
+<body>
+    <header class="header">Démineur</header>
+    <div id="jeu" class="jeu">
+        <div id="barreBouton" class="barreBouton">
+            <button id="btnJouer" class="btnJouer">Lancer le jeu</button>
+        </div>
+        <div id="choixDifficulte" class="choixDifficulte">
+            <select id="niveau">
+                <option valeur="facile">Facile</option>
+                <option valeur="moyen">Moyen</option>
+                <option valeur="dur">Dur</option>
+                <option valeur="perso">Personnalisé</option>
+            </select>
+        </div>
+        <div id="personnalise" class="personnalise">
+            Nombre de lignes : <input type="number" min="0" max="100" id="tailleLigne" value="20" /><br />
+            Nombre de colonnes : <input type="number" min="0" max="100" id="tailleColonne" value="20" /><br />
+            Nombre de bombes : <input type="number" min="0" max="2500"  id="nombreBombes" value="20" />
+        </div>
+        <div id="resultat" class="resultat">
+            <img id="imageResultat" src="" />
+        </div>
+        <div id="grilleJeu" class="grilleJeu">
+        </div>
+        <div id="infoJeu" class="infoJeu">
+            Nombre de bombes restantes : <span id="nombreBombesRestantes"></span>
+        </div>
+        <div id="chrono" class="chrono">
+            0:00
+        </div>
+        <div id="log" class="log">
+            <p id="pLog">Log</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

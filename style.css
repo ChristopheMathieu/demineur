@@ -1,0 +1,55 @@
+.header {
+  text-align: center;
+}
+
+.jeu {
+  display: block;
+  overflow-x: scroll;
+}
+
+.barreBouton {
+  margin: 20px;
+  text-align: center;
+}
+
+.choixDifficulte {
+  margin: 20px;
+  text-align: center;
+}
+
+.personnalise {
+  display: none;
+  margin: 20px;
+  text-align: center;
+}
+
+.resultat {
+  display: none;
+  margin: 20px;
+  text-align: center;
+}
+
+.grilleJeu {
+  display: block;
+  margin: 20px;
+  text-align: center;
+}
+
+.ligneJeu {
+  display: block;
+  white-space: nowrap;
+}
+
+.infoJeu {
+  margin: 20px;
+  text-align: center;
+}
+
+.chrono {
+  margin: 20px;
+  text-align: center;
+}
+
+.log {
+  display: none;
+}
