@@ -28,24 +28,8 @@ class CaseJeu {
         this.estBombe = false;
         this.estDrapeau = false;
         this.laGrilleJeu = laGrilleJeu;
-        //this.nmbreBombeAutour = 0;
     }
 
-    //set estCache(cache) {
-    //    this.estCache = cache;
-    //}
-
-    //get estCache() {
-    //    return this.estCache;
-    //}
-
-    //set estBombe(bombe) {
-    //    this.estBombe = bombe;
-    //}
-
-    //get estBombe() {
-    //    return this.estBombe;
-    //}
     montreCase(click) {
         let idCase = this.coordLigne + ';' + this.coordColonne;
 
@@ -265,8 +249,6 @@ class GrilleJeu {
             
             ligneJeu.setAttribute('class', 'ligneJeu');
             jeu.setAttribute('width', nombreColonnes * 32 + "px");
-            //ligneJeu.setAttribute('height', 32);
-            //document.body.clientWidth = nombreColonnes * 32;
 
             grilleJeu.append(ligneJeu);
 
@@ -409,9 +391,5 @@ let btnJouer = document.getElementById("btnJouer");
 niveau.addEventListener('change', event => choixNiveau(event));
 btnJouer.addEventListener('click', lanceJeu);
 
-console.log(maGrilleJeu);
-
-
-
-
+//console.log(maGrilleJeu);
 
