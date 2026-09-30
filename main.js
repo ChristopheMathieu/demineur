@@ -230,6 +230,7 @@ class GrilleJeu {
         this.nombreLignes = nombreLignes;
         this.nombreColonnes = nombreColonnes;
         this.nombreBombes = nombreBombes;
+        this.nombreDrapeaux = 0;
         this.temps = 0;
 
         if (this.timer != 0) {
@@ -366,10 +367,10 @@ function lanceJeu() {
             maGrilleJeu.InitialiserGrille(5, 10, 5);
             break;
         case 1:
-            maGrilleJeu.InitialiserGrille(10, 20, 10);
+            maGrilleJeu.InitialiserGrille(10, 20, 20);
             break;
         case 2:
-            maGrilleJeu.InitialiserGrille(20, 40, 20);
+            maGrilleJeu.InitialiserGrille(20, 40, 80);
             break;
         case 3:
             const nbLignes = document.getElementById("tailleLigne").value;
